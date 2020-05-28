@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Rishitha Vurimi</title>
+    <link rel="icon" href="img/InShot_20200420_094156898.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.0.0/bootstrap-social.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: black;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+   
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 30px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 130px 0;
+    border-bottom: 1px solid #47748b;
+
+}
+
+#sidebar ul.components :hover {
+    color:#7386D5;
+    background: #fff;
+}
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 90px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    #content {
+        font-size-adjust: inherit;
+    }
+}
+
+ 
+
+ #content div:hover{
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ 
+div:target{
+    
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+ }
+
+
+        </style>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Hey, I am </h3>
+                <h3>Rishitha Vurimi. </h3>
+            </div>
+            <div style=" padding-left: 20px ">
+                <img src="img/20200319_105221_cropped1.jpg" style="border-radius: 50%; width: 90%; ">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a style="text-align: center" href="#aboutme">About me</a>
+                </li>
+                <li class="active">
+                    <a style="text-align: center" href="#background">Background</a>
+                </li>
+                <li>
+                    <a style="text-align: center" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a style="text-align: center" href="#projects">Projects</a>
+
+                </li>
+
+                <li>
+                    <a style="text-align: center" href="#connect">Can connect with me on</a>
+                </li>
+                <li>
+                    <a style="text-align: center" href="#other">Other than Academics</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            <span></span>
+                        </button>
+                    </div>
+
+
+                </div>
+            </nav>
+
+            <div id="aboutme" style="padding-left:60px">
+                <br><br>
+                <h3>About Me</h3>
+                <br>
+
+                <p>I would define myself as a learner.
+                    Also I am a smart, Hard-Working and highly motivated undergrad. </p>
+                <p>I am Currently pursuing my Bachelors focused in Electronics and Communication.</p>
+                <p>My interest lies in the field of Web Development and (IoT) Internet of things.</p>
+                <p>I am specifically
+                    carried out by the impact
+                    of Data science &amp; Artificial Intelligence in the present world. </p>
+                <p>At present, I am developing this skill and would definitely do the best I can.
+                    And yeah, I love exploring all the things.</p>
+
+
+                <br>
+
+            </div>
+
+            <div id="background" style="padding-left:60px">
+                <br><br>
+                <h3>Background</h3>
+                <br>
+                    <p>I am a Second year Electronics and Communication Engineering Student at Indian Institute of Information Technology, Sri City (2018-2022)</p>
+                    <p>I've Passed 12<sup>th</sup> with 98.4% from Narayana Junior College, Aravinda Nagar, Nellore, AP (2016-2018)</p>
+                    <p>I've Passed 10<sup>th</sup>with 9.8 GPA from Vowel school, Nellore, AP (2016)</p>
+                <br>
+
+            </div>
+
+
+            <div id="skills" style="padding: 0px 60px 0px 60px">
+                <br> <br>
+                <h3>Skills</h3>
+                <br>
+                <div>
+                    <p style="font-size: 18px">C&nbsp;&nbsp;&nbsp;OOP With
+                        C++&nbsp;&nbsp;&nbsp;Python</p>
+                    <p style="font-size: 18px">
+                        HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;Javascript&nbsp;&nbsp;&nbsp;Bootstrap4 </p>
+                    <p style="font-size: 18px"> Data analysis with
+                        SQl&nbsp;&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;Git&nbsp;&nbsp;&nbsp;Node.js</p>
+                    <p style="font-size: 18px">Arduino&nbsp;&nbsp;&nbsp;NodeMCU&nbsp;&nbsp;&nbsp;ESP8266&nbsp;&nbsp;&nbsp;Matlab</p>
+                </div>
+                <br> <br>
+
+            </div>
+
+
+            <div id="projects" style="padding-left:60px">
+                <br> <br>
+                <h3>Projects</h3> <br>
+                <div>
+                    <br>
+                    <h4> 1. Smart Green House </h4>
+                    <p>The aim of this project is to monitor and control a green house with
+                        sensors and actuators through a
+                        mobile app connected to the internet dynamically.
+                    </p>
+                    <p> Sensors that were used are soil moisture, Temperature and Humidity -
+                        DHT 11 and LDR for light
+                        sensor.</p>
+                    <p> Data was collected from the sensors through a
+                        microcontroller Arduino here, and stored in the firebase.
+                    </p>
+                    <p> The web application and the mobile app was built using HTML5, CSS and
+                        very few bootstrap features!
+                    </p>
+                    <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
+                        <a style="color: blue" href="https://github.com/rishitha24/SmartGreenHouse"> Click here! </a>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                    <h4> 2. Multiple Motor Synchronization </h4>
+                    <p>This project is an idea to replace huge mechanical devices like gears
+                        with
+                        an embedded device (tried with Arduino)
+                        to synchronize many motors in industries.
+                    </p>
+                    <p> Using an embedded device would be benificial because we can over came
+                        wear & tear of machines also labour work can be reduced.</p>
+                    <p> The technique that was used to synchronize motors was "Adjacent
+                        cross-coupling" keeping delay in the mind.
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                    <h4> 3. Spatial Modulation </h4>
+                    <p>This project is an idea to simulate Spatial Modualtion technique with
+                        Space Time Block Coding (STBC) to achieve
+                        higher data rate, spectral efficiency and reliability.
+                    </p>
+                    <p> STBC is chosen over Spatial Multiplexing (SM) because, SM using
+                        V-Blast requires complex decoders at the
+                        receivers as they are prone to high channel-interface.
+                    </p>
+                    <p>
+                    </p>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                    <h4> 4. Front-end Website using Bootstrap4 </h4>
+                    <p>The webpage was built using HTML5, CSS and mainly concentrating on the
+                        features of Bootstrap4 and very few JS's! </p>
+                    <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
+                        <a style="color: blue" href="https://github.com/rishitha24/bootstrap"> Click here! </a>
+                    </p>
+                    <br>
+                </div>
+                <br> <br>
+            </div>
+
+            <div id="connect" style="padding: 0px 60px 0px 60px">
+                <br> <br>
+                <h3>Can Connect With Me on.... </h3>
+                <br>
+                <div style="padding-left: 80px">
+                    <a style="color: #7386D5" class="btn btn-social-media" href="mailto:vurimirishitha@gmail.com"><i
+                            class="fa fa-envelope fa-3x"></i></a> &nbsp;&nbsp;&nbsp;
+                    <a style="color: #7386D5" class="btn btn-social-media" href="https://www.linkedin.com/in/rishitha-vurimi-5232a1185/"
+                        target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+                    <a style="color: #7386D5" class="btn btn-social-media" href="https://github.com/rishitha24" target="_blank"><i
+                            class="fa fa-github fa-3x"></i></a>
+                </div>
+                <br> <br>
+
+            </div>
+
+            <div id="other" style="padding-left:60px">
+                <br><br>
+                <h3>Other than Academics</h3>
+                <br>
+                    <p>I like to draw sketches preferably "Mandalas" to get relaxed! Mostly I draw to convey my emotions.</p>
+                    <p>I also like reading books of Mr. Chetan Bhagat and one of them which I wouldn't get bored reading many a times is "One Indian Girl."</p>
+                    <p>I would choose to read books that show Pain and ofcourse Love. One such interesting book that I read was "Scribbled Thoughts" by Mr. Sharad Raj </p>
+                    <p>I am also interested in dancing and I've learnt classical (Kuchipudi) for a very less period of time.</p>
+                <br>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
