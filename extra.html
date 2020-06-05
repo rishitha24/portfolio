@@ -17,33 +17,12 @@
     <style>
         @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: black;
-}
-
-a, a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
 .navbar {
     padding: 0px 10px;
-    background: white;
+    background:#2b2b2e ;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-   
 }
 
 .navbar-btn {
@@ -59,7 +38,6 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -69,9 +47,9 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
+    min-width: 240px;
+    max-width: 240px;
+    background: rgba(108, 114, 147, 0.2);
     color: #fff;
     transition: all 0.3s;
 }
@@ -80,20 +58,18 @@ a, a:hover, a:focus {
     margin-left: -250px;
 }
 
-#sidebar .sidebar-header {
-    padding: 30px;
-    background: #7386D5;
-}
+
 
 #sidebar ul.components {
-    padding: 130px 0;
-    border-bottom: 1px solid #7386D5;
+    padding: 60px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
 
 }
 
 #sidebar ul.components :hover {
-    color:#7386D5;
-    background: #fff;
+
+    color: #ffffff;
 }
 
 
@@ -101,6 +77,8 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    color: #6c7293;
+    text-decoration:none;
 }
 
 /* ---------------------------------------------------
@@ -134,16 +112,40 @@ a, a:hover, a:focus {
  
 
  #content div:hover{
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1),
         6px 6px 10px rgba(0, 0, 0, 0.2);
  }
 
  
 div:target{
     
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.1),
         6px 6px 10px rgba(0, 0, 0, 0.2);
+
  }
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+*{margin-left: 7px; padding: 0; box-sizing: border-box;}
+body,html{
+	margin: 10px auto;
+	text-align: center;
+	background: #2b2b2e;
+}
+*{ color:white;}
+
+.border-radius{border-radius: 500px;}
+
+
+
+
+
+
+
 
 
         </style>
@@ -160,7 +162,7 @@ div:target{
                 <h3>Hey, I am </h3>
                 <h3>Rishitha Vurimi. </h3>
             </div>
-            <div style=" padding-left: 20px ">
+            <div style=" padding-left: 20px; padding-top: 50px; padding-right: 20px ">
                 <img src="img/20200319_105221_cropped1.jpg" style="border-radius: 50%; width: 90%; ">
             </div>
 
@@ -196,7 +198,7 @@ div:target{
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
 
-                    <div class="navbar-header">
+                    <div class="navbar-header" style="float: left; position:absolute; ">
                         <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                             <i class="glyphicon glyphicon-align-left"></i>
                             <span></span>
@@ -207,47 +209,45 @@ div:target{
                 </div>
             </nav>
 
-            <div id="aboutme" style="padding-left:60px">
-                <br><br>
+            <div id="aboutme" style="padding: 10px 30px 10px 30px;   background: rgba(108, 114, 147, 0.2);">
                 <h3>About Me</h3>
                 <br>
 
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I would define myself as a
+                <p> <i style="color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i>  I would define myself as a
                     consitent
                     learner. Also I am smart, Hard-Working and highly motivated undergrad. </p>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I am Currently pursuing my
+                <p> <i style=" color:rgb(101, 191, 243);;" class="fa fa-arrow-right fa-sm"></i> I am Currently pursuing my
                     Bachelors focused in Electronics and Communication.</p>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> My interest lies in the field of
+                <p> <i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> My interest lies in the field of
                     Web Development and (IoT) Internet of things.</p>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I am specifically
+                <p> <i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I am specifically
                     carried out by the impact
                     of Data science &amp; Artificial Intelligence in the present world. </p>
-                <p><i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> At present, I am developing this
+                <p><i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> At present, I am developing this
                     skill and would definitely contribute the best I can. And yeah, I love exploring all the things.</p>
 
 
                 <br>
 
             </div>
-
-            <div id="background" style="padding-left:60px">
-                <br><br>
+            <br> <br> <br>
+            <div id="background" style="padding: 10px 30px 10px 30px;   background: rgba(108, 114, 147, 0.2);">
                 <h3>Background</h3>
                 <br>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I am a Second year Electronics and
+                <p> <i style=" color:rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I am a Second year Electronics and
                     Communication Engineering Student at Indian Institute of Information Technology, Sri City
                     (2018-2022)</p>
-                <p><i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I've Passed 12<sup>th</sup> with
+                <p><i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I've Passed 12<sup>th</sup> with
                     98.4% from Narayana Junior College, Aravinda Nagar, Nellore, AP (2016-2018)</p>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I've Passed 10<sup>th</sup>with
+                <p> <i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I've Passed 10<sup>th</sup>with
                     9.8 GPA from Vowel school, Nellore, AP (2016)</p>
                 <br>
 
             </div>
 
-
-            <div id="skills" style="padding: 0px 60px 0px 60px">
-                <br> <br>
+            <br> <br> <br>
+            <div id="skills" style="padding: 0px 60px 0px 60px; background: rgba(108, 114, 147, 0.2);">
+                <br>
                 <h3>Skills</h3>
                 <br>
                 <div>
@@ -262,13 +262,14 @@ div:target{
                 <br> <br>
 
             </div>
-
-
-            <div id="projects" style="padding-left:60px; padding-right: 30px">
+            <br> <br> <br>
+            <div id="projects" style="padding: 10px 30px 10px 30px;  ">
                 <br> <br>
-                <h3>Projects</h3> <br>
-                <div>
+
+                <div style="background: rgba(108, 114, 147, 0.2);padding: 10px 30px 10px 30px; ">
                     <br>
+                    <h3>Projects</h3> <br>
+
                     <h4> 1. Smart Green House </h4>
                     <p>The aim of this project is to monitor and control a green house with
                         sensors and actuators through a
@@ -284,11 +285,13 @@ div:target{
                         very few bootstrap features!
                     </p>
                     <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
-                        <a style="color: blue" href="https://github.com/rishitha24/SmartGreenHouse"> Click here! </a>
+                        <a style="color: rgb(101, 191, 243);  text-decoration:none;" target="_blank" href="https://github.com/rishitha24/SmartGreenHouse">
+                            Click here! </a>
                     </p>
                     <br>
                 </div>
-                <div>
+                <br>
+                <div style="background: rgba(108, 114, 147, 0.2); padding: 10px 30px 10px 30px; ">
                     <br>
                     <h4> 2. Multiple Motor Synchronization </h4>
                     <p>This project is an idea to replace huge mechanical devices like gears
@@ -303,7 +306,8 @@ div:target{
                     </p>
                     <br>
                 </div>
-                <div>
+                <br>
+                <div style="background: rgba(108, 114, 147, 0.2);padding: 10px 30px 10px 30px; ">
                     <br>
                     <h4> 3. Spatial Modulation </h4>
                     <p>This project is an idea to simulate Spatial Modualtion technique with
@@ -318,47 +322,49 @@ div:target{
                     </p>
                     <br>
                 </div>
-                <div>
+                <br>
+                <div style="background: rgba(108, 114, 147, 0.2); padding: 10px 30px 10px 30px; ">
                     <br>
                     <h4> 4. Front-end Website using Bootstrap4 </h4>
                     <p>The webpage was built using HTML5, CSS and mainly concentrating on the
                         features of Bootstrap4 and very few JS's! </p>
                     <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
-                        <a style="color: blue" href="https://github.com/rishitha24/bootstrap"> Click here! </a>
+                        <a style="color: rgb(101, 191, 243);  text-decoration:none;"target="_blank" href="https://github.com/rishitha24/bootstrap">
+                            Click here! </a>
                     </p>
                     <br>
                 </div>
                 <br> <br>
             </div>
+            <br> <br>
 
-            <div id="connect" style="padding: 0px 60px 0px 60px">
-                <br> <br>
+            <div id="connect" style="padding: 10px 30px 10px 30px;  background: rgba(108, 114, 147, 0.2);">
                 <h3>Can Connect With Me on.... </h3>
                 <br>
-                <div style="padding-left: 80px">
-                    <a style="color: #7386D5" class="btn btn-social-media" href="mailto:vurimirishitha@gmail.com"><i
+                <div style="padding-left: 0px">
+                    <a class="btn btn-social-media" href="mailto:vurimirishitha@gmail.com"><i
                             class="fa fa-envelope fa-3x"></i></a> &nbsp;&nbsp;&nbsp;
-                    <a style="color: #7386D5" class="btn btn-social-media" href="https://www.linkedin.com/in/rishitha-vurimi-5232a1185/"
+                    <a class="btn btn-social-media" href="https://www.linkedin.com/in/rishitha-vurimi-5232a1185/"
                         target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-                    <a style="color: #7386D5" class="btn btn-social-media" href="https://github.com/rishitha24" target="_blank"><i
+                    <a class="btn btn-social-media" href="https://github.com/rishitha24" target="_blank"><i
                             class="fa fa-github fa-3x"></i></a>
                 </div>
                 <br> <br>
 
             </div>
+            <br> <br> <br>
 
-            <div id="other" style="padding-left:60px">
-                <br><br>
+            <div id="other" style="padding: 10px 30px 10px 30px;  background: rgba(108, 114, 147, 0.2);">
                 <h3>Other than Academics</h3>
                 <br>
-                <p><i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I like to draw sketches preferably
+                <p><i style=" color:rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I like to draw sketches preferably
                     "Mandalas" to get relaxed! Mostly I draw to convey my emotions.</p>
-                <p> <i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I also like reading books of Mr.
+                <p> <i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I also like reading books of Mr.
                     Chetan Bhagat and one of them which I wouldn't get bored reading many a times is "One Indian Girl."</p>
-                <p><i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I would choose to read books that
+                <p><i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I would choose to read books that
                     show Pain and ofcourse Love. One such interesting book that I read was "Scribbled Thoughts" by Mr.
                     Sharad Raj </p>
-                <p><i style=" color: #6d7fcc;" class="fa fa-arrow-right fa-sm"></i> I am also interested in dancing and
+                <p><i style=" color: rgb(101, 191, 243);" class="fa fa-arrow-right fa-sm"></i> I am also interested in dancing and
                     I've learnt classical (Kuchipudi) for a very less period of time.</p>
                 <br>
 
