@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.0.0/bootstrap-social.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     <style>
         @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
@@ -43,7 +45,7 @@
 
 #sidebar {
     
-    height: 100%;
+  height: 100%;
   width: 260px;
   position: fixed;
   z-index: 1;
@@ -62,7 +64,6 @@
 
 #sidebar ul.components {
     padding: 60px 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
 
 }
@@ -80,9 +81,10 @@
     padding: 10px;
     font-size: 1.1em;
     display: block;
-    color: #6c7293;
+    color: rgb(101,191,243);
     text-decoration:none;
-}
+    font-weight: bold;
+    }
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -99,11 +101,9 @@
 ----------------------------------------------------- */
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: 0px;
     }
-    #sidebar.active {
-        margin-left: 0;
-    }
+    
     #sidebarCollapse span {
         display: none;
     }
@@ -134,7 +134,7 @@ div:target{
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
-*{margin-left: 7px; padding: 0; box-sizing: border-box; }
+*{margin-left: 7px; padding: 0; box-sizing: border-box;  }
 body,html{
 	margin: 10px auto;
 	text-align: center;
@@ -319,110 +319,107 @@ body,html{
 <body onload="myFunction()" style="margin:0;">
 
     <div id="loader"></div>
-    
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <div style="display:none;" id="myDiv" class="animate-bottom ">
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
-                <div class="sidebar-header css-typing">
-                    <p style="font-size: 20px; padding-top:30px; font-weight: bold; color: palegreen; font-family:Verdana, Geneva, Tahoma, sans-serif">Hey, I am </p>
-                    <p style="font-size: 20px; font-weight:bold; color: palegreen; font-family:Verdana, Geneva, Tahoma, sans-serif">Rishitha Vurimi. <p>
+                <div class="sidebar-header css-typing ">
+                    <p style="font-size: 20px; padding-top:30px; font-weight: bold; color:rgb(255, 239, 168); font-family:Verdana, Geneva, Tahoma, sans-serif">Hey,
+                        I am </p>
+                    <p style="font-size:30px; color: rgb(255, 239, 168);font-family: 'Tangerine', serif; text-shadow: 4px 4px 4px #aaa;">Rishitha Vurimi. <p>
                 </div>
                 <div style=" padding-left: 20px; padding-top: 50px; padding-right: 20px ">
                     <img src="img/20200319_105221_cropped1.jpg" style="border-radius: 50%; width: 90%; ">
                 </div>
-    
+
+
                 <ul class="list-unstyled components">
-                    <li class="active">
-                        <a style="text-align: center" href="#aboutme">About me</a>
-                    </li>
-                    <li class="active">
-                        <a style="text-align: center" href="#background">Background</a>
+                    <li>
+
+                        <a style="text-align: center;" href="#aboutme">About me</a>
                     </li>
                     <li>
-                        <a style="text-align: center" href="#skills">Skills</a>
+                        <a style="text-align: center; " href="#background">Background</a>
                     </li>
                     <li>
-                        <a style="text-align: center" href="#projects">Projects</a>
-    
-                    </li>
-    
-                    <li>
-                        <a style="text-align: center" href="#connect">Can connect with me on</a>
+                        <a style="text-align: center; " href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a style="text-align: center" href="#other">Other than Academics</a>
+                        <a style="text-align: center; " href="#projects">Projects</a>
+
+                    </li>
+
+                    <li>
+                        <a style="text-align: center; " href="#connect">Can connect with me on</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center;" href="#other">Other than Academics</a>
                     </li>
                 </ul>
-    
-    
+
+
             </nav>
-           
-    
+
+
             <!-- Page Content Holder -->
             <div id="content">
-    
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-    
-                        <div class="navbar-header" style="float: left; position:absolute; ">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span></span>
-                            </button>
-                        </div>
-    
-    
-                    </div>
-                </nav>
-                
+
+
+
                 <div id="aboutme" style="padding: 10px 30px 10px 30px;   background: rgba(108, 114, 147, 0.2);">
-                        <div class="css-typing" style="text-align: center">
-                                <p style="font-size: 20px; font-weight:bold; font-family:cursive;"> About <p>
-                        </div>
-                    <br> 
-    
-                    <p> <i style="color: orange;" class="fa fa-arrow-right fa-sm"></i>  I would define myself as a
+                    <div class="css-typing" style="text-align: center">
+                        <br>
+                        <p style="font-size: 20px; font-weight:bold; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen">
+                            About <p>
+                    </div>
+
+                    <p> <i style="color: orange;" class="fa fa-arrow-right fa-sm"></i> I would define myself as a
                         consitent
                         learner. Also I am smart, Hard-Working and highly motivated undergrad. </p>
                     <p> <i style=" color:orange;" class="fa fa-arrow-right fa-sm"></i> I am Currently pursuing my
                         Bachelors focused in Electronics and Communication.</p>
-                    <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> My interest lies in the field of
+                    <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> My interest lies in the field
+                        of
                         Web Development and (IoT) Internet of things.</p>
                     <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I am specifically
                         carried out by the impact
                         of Data science &amp; Artificial Intelligence in the present world. </p>
                     <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> At present, I am developing this
-                        skill and would definitely contribute the best I can. And yeah, I love exploring all the things.</p>
-    
-    
+                        skill and would definitely contribute the best I can. And yeah, I love exploring all the
+                        things.</p>
+
+
                     <br>
-    
+
                 </div>
                 <br> <br> <br>
                 <div id="background" style="padding: 10px 30px 10px 30px;   background: rgba(108, 114, 147, 0.2);">
-                        <div class="css-typing" style="text-align: center">
-                                <p style="font-size: 20px; font-weight:bold; font-family:cursive; "> Background<p>
-                        </div>
-                    <br> 
-                    <p> <i style=" color:orange;" class="fa fa-arrow-right fa-sm"></i> I am a Second year Electronics and
+                    <div class="css-typing" style="text-align: center">
+                        <p style="font-size: 20px; font-weight:bold; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen">
+                            Background<p>
+                    </div>
+                    <p> <i style=" color:orange;" class="fa fa-arrow-right fa-sm"></i> I am a Second year Electronics
+                        and
                         Communication Engineering Student at Indian Institute of Information Technology, Sri City
                         (2018-2022)</p>
-                    <p><i style=" color: orange;;;" class="fa fa-arrow-right fa-sm"></i> I've Passed 12<sup>th</sup> with
+                    <p><i style=" color: orange;;;" class="fa fa-arrow-right fa-sm"></i> I've Passed 12<sup>th</sup>
+                        with
                         98.4% from Narayana Junior College, Aravinda Nagar, Nellore, AP (2016-2018)</p>
                     <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I've Passed 10<sup>th</sup>with
                         9.8 GPA from Vowel school, Nellore, AP (2016)</p>
                     <br>
-    
+
                 </div>
-    
+
                 <br> <br> <br>
                 <div id="skills" style="padding: 0px 60px 0px 60px; background: rgba(108, 114, 147, 0.2);">
                     <br>
                     <div class="css-typing" style="text-align: center">
-                            <p style="font-size: 20px; font-weight:bold;  font-family:cursive; "> Skills <p>
+                        <p style="font-size: 20px; font-weight:bold;  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen">
+                            Skills <p>
                     </div>
-                    <br> 
+
                     <div>
                         <p style="font-size: 18px">C&nbsp;&nbsp;&nbsp;OOP With
                             C++&nbsp;&nbsp;&nbsp;Python</p>
@@ -433,17 +430,18 @@ body,html{
                         <p style="font-size: 18px">Arduino&nbsp;&nbsp;&nbsp;NodeMCU&nbsp;&nbsp;&nbsp;ESP8266&nbsp;&nbsp;&nbsp;Matlab</p>
                     </div>
                     <br> <br>
-    
+
                 </div>
                 <br> <br> <br>
                 <div id="projects" style="padding: 10px 30px 10px 30px;  ">
                     <br> <br>
-                   
+
                     <div style="background: rgba(108, 114, 147, 0.2);padding: 10px 30px 10px 30px; ">
-                        <br>
-                      
+
+
                         <div class="css-typing" style="text-align: center">
-                                <p style="font-size: 20px; font-weight:bold; font-family:cursive;  padding-top:15px"> Projects <p>
+                            <p style="font-size: 20px; font-weight:bold; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen;  padding-top:15px">
+                                Projects <p>
                         </div>
                         <h4> 1. Smart Green House </h4>
                         <p>The aim of this project is to monitor and control a green house with
@@ -459,7 +457,8 @@ body,html{
                         <p> The web application and the mobile app was built using HTML5, CSS and
                             very few bootstrap features!
                         </p>
-                        <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
+                        <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project
+                            :
                             <a style="color: orange;  text-decoration:none;" target="_blank" href="https://github.com/rishitha24/SmartGreenHouse">
                                 Click here! </a>
                         </p>
@@ -503,8 +502,9 @@ body,html{
                         <h4> 4. Front-end Website using Bootstrap4 </h4>
                         <p>The webpage was built using HTML5, CSS and mainly concentrating on the
                             features of Bootstrap4 and very few JS's! </p>
-                        <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project :
-                            <a style="color: orange;  text-decoration:none;"target="_blank" href="https://github.com/rishitha24/bootstrap">
+                        <p style="padding-left:23px; font-style: italic; font-size: 17px"> Github link for the project
+                            :
+                            <a style="color: orange;  text-decoration:none;" target="_blank" href="https://github.com/rishitha24/bootstrap">
                                 Click here! </a>
                         </p>
                         <br>
@@ -512,87 +512,93 @@ body,html{
                     <br> <br>
                 </div>
                 <br> <br>
-    
+
                 <div id="connect" style="padding: 10px 30px 10px 30px;  background: rgba(108, 114, 147, 0.2);">
-                        <div class="css-typing" style="text-align: center">
-                                <p style="font-size: 20px; font-weight:bold;  font-family:cursive;">Can Connect with me on... <p>
-                        </div>
-                    <br> <br>
+                    <div class="css-typing" style="text-align: center">
+                        <p style="font-size: 20px; font-weight:bold;  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen">Can
+                            Connect with me on... <p>
+                    </div>
+
                     <div style="padding-left: 0px">
-                        <a class="btn btn-social-media" href="mailto:vurimirishitha@gmail.com"><i
-                                class="fa fa-envelope fa-3x"></i></a> &nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-social-media" href="mailto:vurimirishitha@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+                        &nbsp;&nbsp;&nbsp;
                         <a class="btn btn-social-media" href="https://www.linkedin.com/in/rishitha-vurimi-5232a1185/"
                             target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-                        <a class="btn btn-social-media" href="https://github.com/rishitha24" target="_blank"><i
-                                class="fa fa-github fa-3x"></i></a>
+                        <a class="btn btn-social-media" href="https://github.com/rishitha24" target="_blank"><i class="fa fa-github fa-3x"></i></a>
                     </div>
-                    <br> <br>
-    
+                    <br>
+
                 </div>
                 <br> <br> <br>
-    
+
                 <div id="other" style="padding: 10px 30px 10px 30px;  background: rgba(108, 114, 147, 0.2);">
-                        <div class="css-typing" style="text-align: center">
-                                <p style="font-size: 20px; font-weight:bold; font-family:cursive; "> Other than Academics <p>
-                        </div>
-                    <br> <br>
-                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I like to draw sketches preferably
+                    <div class="css-typing" style="text-align: center">
+                        <p style="font-size: 20px; font-weight:bold; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: palegreen ">
+                            Other than Academics <p>
+                    </div>
+                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I like to draw sketches
+                        preferably
                         "Mandalas" to get relaxed! Mostly I draw to convey my emotions.</p>
-                    <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I also like reading books of Mr.
-                        Chetan Bhagat and one of them which I wouldn't get bored reading many a times is "One Indian Girl."</p>
-                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I would choose to read books that
-                        show Pain and ofcourse Love. One such interesting book that I read was "Scribbled Thoughts" by Mr.
+                    <p> <i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I also like reading books of
+                        Mr.
+                        Chetan Bhagat and one of them which I wouldn't get bored reading many a times is "One Indian
+                        Girl."</p>
+                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I would choose to read books
+                        that
+                        show Pain and ofcourse Love. One such interesting book that I read was "Scribbled Thoughts" by
+                        Mr.
                         Sharad Raj </p>
-                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I am also interested in dancing and
+                    <p><i style=" color: orange;" class="fa fa-arrow-right fa-sm"></i> I am also interested in dancing
+                        and
                         I've learnt classical (Kuchipudi) for a very less period of time.</p>
                     <br>
-    
+
                 </div>
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
             </div>
         </div>
-    
-    
-    
-    
-   
-    
+
+
+
+
+
+
     </div>
-    
+
     <script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 1000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
     </script>
-     
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <!-- Bootstrap Js CDN -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                });
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
             });
-    
-    
-        </script>
-    
-    </body>
+        });
+
+
+    </script>
+
+</body>
 
 </html>
